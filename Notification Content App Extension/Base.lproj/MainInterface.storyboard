@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="M4Y-Lb-cyx">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Notification View Controller-->
+        <scene sceneID="cwh-vc-ff4">
+            <objects>
+                <viewController id="M4Y-Lb-cyx" userLabel="Notification View Controller" customClass="NotificationViewController" customModule="Notification_Content_App_Extension" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" simulatedAppContext="notificationCenter" id="S3S-Oj-5AN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="800"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="wqerqwerwqrqwerqwerqwerqwerqwerqwerqwerqwerqwer" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cok-wj-qkz">
+                                <rect key="frame" x="20" y="40" width="335" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Q1J-5Z-FZf">
+                                <rect key="frame" x="10" y="106" width="355" height="594"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Gib-F4-yQC">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" reuseIdentifier="answerCell" id="jD8-sM-Fwf" customClass="QuestionViewCell" customModule="Notification_Content_App_Extension" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qpr-QX-wzG">
+                                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VKg-Jn-til">
+                                                            <rect key="frame" x="14" y="4" width="22" height="42"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                            <size key="shadowOffset" width="-1" height="-1"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="bottom" secondItem="VKg-Jn-til" secondAttribute="bottom" constant="4" id="CsD-mO-KRG"/>
+                                                        <constraint firstItem="VKg-Jn-til" firstAttribute="top" secondItem="Qpr-QX-wzG" secondAttribute="top" constant="4" id="Dlh-mc-9QQ"/>
+                                                        <constraint firstItem="VKg-Jn-til" firstAttribute="leading" secondItem="Qpr-QX-wzG" secondAttribute="leading" constant="14" id="Luu-dB-Uh6"/>
+                                                        <constraint firstAttribute="trailing" secondItem="VKg-Jn-til" secondAttribute="trailing" constant="14" id="Qsf-ia-bcX"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="Qpr-QX-wzG" secondAttribute="bottom" id="3Fh-UU-o5U"/>
+                                            <constraint firstAttribute="trailing" secondItem="Qpr-QX-wzG" secondAttribute="trailing" id="b8c-W2-wui"/>
+                                            <constraint firstItem="Qpr-QX-wzG" firstAttribute="top" secondItem="jD8-sM-Fwf" secondAttribute="top" id="vfA-qh-iTB"/>
+                                            <constraint firstItem="Qpr-QX-wzG" firstAttribute="leading" secondItem="jD8-sM-Fwf" secondAttribute="leading" id="wfH-pF-YxY"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DDg-eq-F1b">
+                                <rect key="frame" x="147" y="708" width="81" height="49"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <inset key="contentEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                                <state key="normal" title="NEXT"/>
+                                <connections>
+                                    <action selector="nextQuestionClick:" destination="M4Y-Lb-cyx" eventType="touchUpInside" id="Hdn-Uk-jj9"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="cok-wj-qkz" secondAttribute="trailing" constant="20" id="G3f-20-OjW"/>
+                            <constraint firstItem="cok-wj-qkz" firstAttribute="leading" secondItem="S3S-Oj-5AN" secondAttribute="leading" constant="20" id="GLx-Pf-wJg"/>
+                            <constraint firstItem="DDg-eq-F1b" firstAttribute="centerX" secondItem="S3S-Oj-5AN" secondAttribute="centerX" id="byy-ew-zkg"/>
+                            <constraint firstItem="2BE-c3-nQJ" firstAttribute="bottom" secondItem="Q1J-5Z-FZf" secondAttribute="bottom" constant="100" id="h1n-MY-uHm"/>
+                            <constraint firstItem="Q1J-5Z-FZf" firstAttribute="top" secondItem="cok-wj-qkz" secondAttribute="bottom" constant="30" id="hBK-TK-LZU"/>
+                            <constraint firstItem="cok-wj-qkz" firstAttribute="top" secondItem="2BE-c3-nQJ" secondAttribute="top" constant="20" id="hdf-Tl-FaH"/>
+                            <constraint firstItem="DDg-eq-F1b" firstAttribute="top" secondItem="Q1J-5Z-FZf" secondAttribute="bottom" constant="8" symbolic="YES" id="usg-Q0-qSK"/>
+                            <constraint firstItem="Q1J-5Z-FZf" firstAttribute="leading" secondItem="2BE-c3-nQJ" secondAttribute="leading" constant="10" id="x9g-61-yNY"/>
+                            <constraint firstItem="2BE-c3-nQJ" firstAttribute="trailing" secondItem="Q1J-5Z-FZf" secondAttribute="trailing" constant="10" id="xvz-8D-jCa"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="2BE-c3-nQJ"/>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="800"/>
+                    <connections>
+                        <outlet property="clearedTransactionLabel" destination="cok-wj-qkz" id="Zbe-9i-IBR"/>
+                        <outlet property="collectionView" destination="Q1J-5Z-FZf" id="KeE-S8-HZE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vXp-U4-Rya" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="118.74062968515743"/>
+        </scene>
+    </scenes>
+</document>

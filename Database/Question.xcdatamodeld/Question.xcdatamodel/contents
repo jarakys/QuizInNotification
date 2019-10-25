@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14492.1" systemVersion="18G84" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Answers" representedClassName="Answers" syncable="YES" codeGenerationType="class">
+        <attribute name="answer" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="key" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="id" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Question" inverseName="rightAnswerId" inverseEntity="Question" syncable="YES"/>
+        <relationship name="questionId" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Question" inverseName="id" inverseEntity="Question" syncable="YES"/>
+    </entity>
+    <entity name="Question" representedClassName="Question" syncable="YES" codeGenerationType="class">
+        <attribute name="textQuestion" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="id" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Answers" inverseName="questionId" inverseEntity="Answers" syncable="YES"/>
+        <relationship name="rightAnswerId" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Answers" inverseName="id" inverseEntity="Answers" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Question" positionX="-63" positionY="-18" width="128" height="90"/>
+        <element name="Answers" positionX="-54" positionY="18" width="128" height="105"/>
+    </elements>
+</model>
